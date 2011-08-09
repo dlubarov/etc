@@ -1,0 +1,10 @@
+[user]
+	email = daniel@lubarov.com
+	name = Daniel Lubarov
+[alias]
+  st = status
+  ci = commit
+  br = branch
+  co = checkout
+[color]
+	ui = true
