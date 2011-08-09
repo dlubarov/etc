@@ -3,11 +3,10 @@ export PATH=~/bin:$PATH
 export EDITOR=vim
 
 export CLICOLOR="YES"
+export GREP_OPTIONS="--color=auto"
 
 alias sendself="sendmail daniel@lubarov.com"
 alias ls="ls -F"
-alias h="hostname"
-alias grep="grep --color=auto"
 alias g="grep"
 alias h="history"
 
