@@ -4,7 +4,10 @@ set nocompatible
 " highlighting
 syntax on
 set hlsearch
+
+" matching brackets
 set showmatch
+set mat=2
 
 " indentation
 filetype indent on
@@ -28,14 +31,16 @@ hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
 set ruler
 set laststatus=2
 
-" keep 3 lines when scrolling
-set scrolloff=3
+" keep several lines when scrolling
+set scrolloff=5
 
 " preserve cursor column
 set nostartofline
 
 " no backups (use a VCS...)
 set nobackup
+set nowritebackup
+set noswapfile
 
 " update console title
 set title
@@ -59,4 +64,17 @@ set mouse=a
 map Y y$
 
 " remember more history
-set history=100
+set history=200
+
+" automatically read outside changes
+set autoread
+
+" emacs navigation for command line
+cnoremap <C-A> <Home>
+cnoremap <C-E> <End>
+cnoremap <C-P> <Up>
+cnoremap <C-N> <Down>
+
+" search with space
+map <space> /
+map <c-space> ?
