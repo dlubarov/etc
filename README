@@ -1,0 +1,6 @@
+This repo contains some of my dotfiles: .profile, .gitconfig, .vimrc, etc.
+
+My intention is to limit this to machine- and shell-independent dotfiles...
+but only sort of. I mostly use bash and zsh, so I want my .profile to work
+with both of them but not necessarily with other shells. I mostly use OS X
+and Debian-like systems, so some scripts may break on Solaris, for example.
