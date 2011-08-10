@@ -1,3 +1,5 @@
+fortune 2> /dev/null
+
 export NAME="Daniel Lubarov"
 
 export PATH=~/bin:$PATH

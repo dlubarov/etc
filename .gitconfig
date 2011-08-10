@@ -1,8 +1,8 @@
 [core]
-  excludesFile = /Users/dlubarov/.gitignore
+  excludesFile = ~/.gitignore
 [user]
-	email = daniel@lubarov.com
 	name = Daniel Lubarov
+	email = daniel@lubarov.com
 [alias]
   st = status
   ci = commit
