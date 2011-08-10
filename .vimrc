@@ -61,10 +61,10 @@ set visualbell
 set mouse=a
 
 " make Y behave like D
-map Y y$
+"map Y y$
 
 " remember more history
-set history=200
+set history=500
 
 " automatically read outside changes
 set autoread
