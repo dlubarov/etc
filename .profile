@@ -1,3 +1,5 @@
+export NAME="Daniel Lubarov"
+
 export PATH=~/bin:$PATH
 
 export EDITOR=vim
