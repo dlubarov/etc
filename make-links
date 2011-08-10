@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+DIR="$( cd "$( dirname "$0" )" && pwd )"
+
+DOTFILES=`ls -a | egrep "^\.\w"`
+
+for FILE in $DOTFILES
+do
+  SOURCE="$DIR/$FILE"
+  TARGET="$HOME/$FILE"
+  rm $TARGET 2> /dev/null
+  ln -s $SOURCE $TARGET
+done
