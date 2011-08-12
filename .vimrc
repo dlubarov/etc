@@ -30,6 +30,7 @@ hi CursorLine cterm=NONE ctermbg=darkred ctermfg=white
 " ruler and status line
 set ruler
 set laststatus=2
+"set statusline=%t%m\ %y\ [%{&fenc}]%=%l/%L\ (%P)\ %c
 
 " keep several lines when scrolling
 set scrolloff=5
