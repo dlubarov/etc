@@ -32,6 +32,9 @@ set ruler
 set laststatus=2
 "set statusline=%t%m\ %y\ [%{&fenc}]%=%l/%L\ (%P)\ %c
 
+" what Vim user would want a silly toolbar?
+set guioptions-=T
+
 " keep several lines when scrolling
 set scrolloff=5
 
