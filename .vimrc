@@ -34,6 +34,7 @@ set laststatus=2
 
 " what Vim user would want a silly toolbar?
 set guioptions-=T
+set guioptions-=m " menu
 
 " keep several lines when scrolling
 set scrolloff=5
@@ -82,3 +83,12 @@ cnoremap <C-N> <Down>
 " search with space
 map <space> /
 map <c-space> ?
+
+" set gvim fonts
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Inconsolata\ 12
+  elseif has("gui_win32")
+    set guifont=Consolas:h11:cANSI
+  endif
+endif
