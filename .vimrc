@@ -88,12 +88,15 @@ inoremap <c-e> <esc>A
 map <space> /
 map <c-space> ?
 
-" Resize splits when the window is resized
+" resize splits when the window is resized
 au VimResized * exe "normal! \<c-w>="
 
 " for vim-latexsuite
 set grepprg=grep\ -nH\ $*
 let g:tex_flavor='latex'
+" I'm not a fan of folding...
+let g:Tex_FoldedSections=''
+let g:Tex_FoldedEnvironments=''
 
 " set gvim fonts
 if has("gui_running")
