@@ -97,6 +97,7 @@ let g:tex_flavor='latex'
 " I'm not a fan of folding...
 let g:Tex_FoldedSections=''
 let g:Tex_FoldedEnvironments=''
+let g:Tex_FoldedMisc=''
 
 " set gvim fonts
 if has("gui_running")
