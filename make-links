@@ -1,13 +1,17 @@
 #!/usr/bin/env bash
 
+set -e
+
 DIR="$( cd "$( dirname "$0" )" && pwd )"
 
-DOTFILES=`ls -a | egrep "^\.\w" | grep -v "^.git$"`
+DOTFILES=`ls -a -1 | egrep "^\.\w" | grep -v "^\.git$"`
 
-for FILE in $DOTFILES
+#for FILE in $DOTFILES
+echo "$DOTFILES" | while read -r FILE
 do
   SOURCE="$DIR/$FILE"
   TARGET="$HOME/$FILE"
+  echo "$SOURCE -> $TARGET";
   rm $TARGET 2> /dev/null
   ln -s $SOURCE $TARGET
 done
