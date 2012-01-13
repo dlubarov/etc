@@ -12,6 +12,6 @@ do
   SOURCE="$DIR/$FILE"
   TARGET="$HOME/$FILE"
   echo "$SOURCE -> $TARGET";
-  rm $TARGET 2> /dev/null
-  ln -s $SOURCE $TARGET
+  rm "$TARGET" 2> /dev/null
+  ln -s "$SOURCE" "$TARGET"
 done
