@@ -101,12 +101,13 @@ noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>/
 au VimResized * exe "normal! \<c-w>="
 
 " for vim-latexsuite
-set grepprg=grep\ -nH\ $*
-let g:tex_flavor='latex'
-" I'm not a fan of folding...
-let g:Tex_FoldedSections=''
-let g:Tex_FoldedEnvironments=''
-let g:Tex_FoldedMisc=''
+" (I've now stopped using it)
+"set grepprg=grep\ -nH\ $*
+"let g:tex_flavor='latex'
+"" I'm not a fan of folding...
+"let g:Tex_FoldedSections=''
+"let g:Tex_FoldedEnvironments=''
+"let g:Tex_FoldedMisc=''
 
 " set gvim fonts
 if has("gui_running")
