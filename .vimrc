@@ -100,17 +100,9 @@ noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>/
 " resize splits when the window is resized
 au VimResized * exe "normal! \<c-w>="
 
-" for vim-latexsuite
-" (I've now stopped using it)
-"set grepprg=grep\ -nH\ $*
-"let g:tex_flavor='latex'
-"" I'm not a fan of folding...
-"let g:Tex_FoldedSections=''
-"let g:Tex_FoldedEnvironments=''
-"let g:Tex_FoldedMisc=''
-
 " set gvim fonts
 if has("gui_running")
+  set guifont=Source\ Code\ Pro:h14
   if has("gui_gtk2")
     "set guifont=Inconsolata\ 12
   elseif has("gui_win32")
@@ -126,5 +118,5 @@ if !has("gui_running")
   set t_Co=256
   let g:solarized_termcolors=256
 endif
-set background=dark
+set background=light
 colorscheme solarized
