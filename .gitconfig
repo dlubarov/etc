@@ -1,5 +1,6 @@
 [core]
   excludesFile = ~/.gitignore
+  pager = cat
 [user]
   name = Daniel Lubarov
   email = daniel@lubarov.com
