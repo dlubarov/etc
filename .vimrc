@@ -100,23 +100,6 @@ noremap <silent> ,u :<C-B>sil <C-E>s/^\V<C-R>=escape(b:comment_leader,'\/')<CR>/
 " resize splits when the window is resized
 au VimResized * exe "normal! \<c-w>="
 
-" set gvim fonts
-if has("gui_running")
-  set guifont=Source\ Code\ Pro:h14
-  if has("gui_gtk2")
-    "set guifont=Inconsolata\ 12
-  elseif has("gui_win32")
-    set guifont=Consolas:h11:cANSI
-  endif
-endif
-
-" pathogen
-call pathogen#infect()
-
 " color scheme
-if !has("gui_running")
-  set t_Co=256
-  let g:solarized_termcolors=256
-endif
 set background=light
-colorscheme solarized
+colorscheme solarized8

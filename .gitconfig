@@ -1,6 +1,6 @@
 [core]
   excludesFile = ~/.gitignore
-  pager = cat
+  pager = less -XF
 [user]
   name = Daniel Lubarov
   email = daniel@lubarov.com
@@ -11,3 +11,5 @@
   co = checkout
 [color]
   ui = true
+[pull]
+	rebase = true
